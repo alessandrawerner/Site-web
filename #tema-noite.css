@@ -1,0 +1,21 @@
+:root {
+  --fonte:      "Poppins", "Segoe UI", Arial, Helvetica, sans-serif;
+
+  /* cores */
+  --principal:        #dfa03f;   
+  --principal-escuro: #f0b95e;   
+  --sobre-principal:  #1b1016;   
+  --barra:            #120a0e;   
+  --sobre-barra:      #d8c6d0;
+
+  --apoio:            #ff8a7a;
+  --realce:           #7fd1e8;   
+  --realce-suave:     #3a2430;
+
+  --fundo:       #1b1016;
+  --superficie:  #2a1a22;       
+  --zebra:       #241722;
+  --texto:       #f0e8ec;
+  --texto-fraco: #b7a6b0;
+  --linha:       #4a3540;
+}
