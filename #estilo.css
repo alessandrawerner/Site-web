@@ -1,0 +1,368 @@
+
+:root {
+  --fonte:      "Poppins", "Segoe UI", Arial, Helvetica, sans-serif;
+  --principal:        #88005b;   
+  --principal-escuro: #560035;   
+  --sobre-principal:  #ffffff;   
+
+  --barra:            #560035;   
+  --sobre-barra:      #f0d7e6;   
+
+  --apoio:            #053e60;   
+  --realce:           #dfa03f;   
+  --realce-suave:     #f0d7e6;   
+
+  --fundo:       #f4eff2;
+  --superficie:  #ffffff;
+  --zebra:       #faf7f9;        
+  --texto:       #231f20;
+  --texto-fraco: #6e6a70;
+  --linha:       #e2d8de;
+
+  --e-1: 0.5rem;    
+  --e-2: 1rem;     
+  --e-3: 1.5rem;    
+  --e-4: 2.5rem;    
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fonte);
+  font-size: 1rem;
+  line-height: 1.6;
+
+  color: var(--texto);
+  background-color: var(--fundo);
+
+  max-width: 860px;
+  margin: 0 auto;              /* 0 em cima/embaixo, automático nas laterais */
+  padding: 0 var(--e-3) var(--e-4);
+}
+
+header {
+  background-color: var(--principal);
+  color: var(--sobre-principal);
+  padding: var(--e-4) var(--e-3);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 0 0 var(--e-1);
+}
+
+header p {
+  margin: 0;
+  color: var(--sobre-principal);
+  opacity: 0.85;          
+}
+
+nav {
+  background-color: var(--barra);
+  padding: 0 var(--e-2);
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  display: inline-block;
+  padding: var(--e-1) var(--e-2);
+  color: var(--sobre-barra);
+  text-decoration: none;    
+  font-weight: 600;
+  font-size: 0.9375rem;
+  border-radius: 4px;
+}
+
+nav a:hover {
+  background-color: var(--principal);
+  color: var(--sobre-principal);
+}
+
+nav a:focus {
+  outline: 3px solid var(--realce);
+  outline-offset: 2px;
+}
+
+main {
+  background-color: var(--superficie);
+  padding: var(--e-2) var(--e-4) var(--e-4);
+}
+
+section {
+  margin-bottom: var(--e-4);
+}
+
+h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--principal);
+
+  padding-bottom: var(--e-1);
+  border-bottom: 2px solid var(--realce-suave);
+  margin: var(--e-4) 0 var(--e-2);
+}
+
+main section:first-of-type h2 {
+  margin-top: 0;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--apoio);
+  margin: var(--e-3) 0 var(--e-1);
+}
+
+p {
+  margin: 0 0 var(--e-2);
+}
+
+a {
+  color: var(--principal);
+}
+
+a:hover {
+  color: var(--principal-escuro);
+}
+
+img {
+  max-width: 100%;      
+  height: auto;
+  border-radius: 6px;
+  margin-top: var(--e-2);
+}
+
+main ul,
+main ol {
+  margin: 0 0 var(--e-2);
+  padding-left: var(--e-3);
+}
+
+main li {
+  margin-bottom: var(--e-1);
+}
+
+strong {
+  color: var(--principal-escuro);
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: var(--e-2) 0 var(--e-1);
+}
+
+caption {
+  text-align: left;
+  font-weight: 600;
+  color: var(--apoio);
+  padding-bottom: var(--e-1);
+}
+
+th,
+td {
+  border: 1px solid var(--linha);
+  padding: var(--e-1) var(--e-2);
+  text-align: left;
+}
+
+thead th {
+  background-color: var(--apoio);
+  color: var(--superficie);   
+}
+
+tbody th {
+  background-color: var(--fundo);
+  color: var(--principal);
+}
+
+tbody tr:nth-child(even) {
+  background-color: var(--zebra);
+}
+
+tbody tr:hover {
+  background-color: var(--realce-suave);
+}
+
+form {
+  background-color: var(--fundo);
+  padding: var(--e-3);
+  border-radius: 8px;
+  border-top: 4px solid var(--principal);
+}
+
+fieldset {
+  border: 1px solid var(--linha);
+  border-radius: 6px;
+  background-color: var(--superficie);
+  padding: var(--e-3) var(--e-3) var(--e-1);
+  margin-bottom: var(--e-3);
+}
+
+legend {
+  color: var(--principal);
+  font-weight: 600;
+  padding: 0 var(--e-1);
+}
+
+form div {
+  margin-bottom: var(--e-2);
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  margin-bottom: var(--e-1);
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: var(--e-1) var(--e-2);
+  border: 1px solid var(--linha);
+  border-radius: 4px;
+
+  background-color: var(--superficie);
+  color: var(--texto);
+
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 7.5rem;
+}
+
+input[type="checkbox"] {
+  width: auto;
+  margin-right: var(--e-1);
+}
+
+input[type="checkbox"] + label {
+  display: inline;
+  font-weight: 400;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 3px solid var(--realce);
+  outline-offset: 1px;
+  border-color: var(--principal);
+}
+
+button {
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: var(--e-2) var(--e-4);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"] {
+  background-color: var(--principal);
+  color: var(--sobre-principal);
+}
+
+button[type="submit"]:hover {
+  background-color: var(--principal-escuro);
+}
+
+button[type="reset"] {
+  background-color: var(--superficie);
+  color: var(--texto-fraco);
+  border: 1px solid var(--linha);
+  margin-left: var(--e-1);
+}
+
+button:focus {
+  outline: 3px solid var(--realce);
+  outline-offset: 2px;
+}
+
+aside {
+  background-color: var(--superficie);
+  border-left: 4px solid var(--realce);
+  padding: var(--e-3) var(--e-4);
+  margin-top: var(--e-1);
+}
+
+aside h2 {
+  margin-top: var(--e-1);
+  font-size: 1.25rem;
+  border-bottom: none;
+}
+
+footer {
+  background-color: var(--barra);
+  color: var(--sobre-barra);
+  padding: var(--e-3) var(--e-4);
+  font-size: 0.875rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+.destaque {
+  background-color: var(--realce-suave);
+  border-left: 4px solid var(--principal);
+  padding: var(--e-2) var(--e-3);
+}
+
+.botao-tema {
+  margin-top: var(--e-2);
+  padding: var(--e-1) var(--e-2);
+  background-color: transparent;
+  color: var(--sobre-principal);
+  border: 2px solid var(--sobre-principal);
+}
+
+.botao-tema:hover {
+  background-color: var(--sobre-principal);
+  color: var(--principal);
+}
+
+.contador {
+  margin: var(--e-1) 0 0;
+  font-size: 0.875rem;
+  color: var(--texto-fraco);
+}
+
+.contador.alerta {
+  color: var(--principal);
+  font-weight: 600;
+}
+
+.aviso {
+  margin: var(--e-2) 0 0;
+  padding: var(--e-1) var(--e-2);
+  border-left: 4px solid var(--principal);
+  background-color: var(--realce-suave);
+  color: var(--texto);
+  font-weight: 600;
+}
+
+.aviso:empty {
+  display: none;
+}
