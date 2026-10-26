@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página pessoal feita nas aulas de ARA0062.">
+    <title>Alessandra Dias Werner de Jesus — página pessoal</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/tema-noite.css" id="tema-noite" disabled>
+
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+
+    <header>
+      <h1>Alessandra Dias Werner de Jesus</h1>
+      <p>Estudante de Ciência da Computação</p>
+      <p id="saudacao">Olá!</p>
+
+      <button type="button" id="botao-tema" class="botao-tema">Tema escuro</button>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#sobre">Sobre mim</a></li>
+        <li><a href="#gostos">O que eu gosto</a></li>
+        <li><a href="#horarios">Meus horários</a></li>
+        <li><a href="#faculdade">Onde eu estudo</a></li>
+        <li><a href="#contato">Fale comigo</a></li>
+      </ul>
+    </nav>
+
+    <main>
+
+      <section id="sobre">
+        <h2>Sobre mim</h2>
+        <p>
+          Estudo Ciência da Computação e estou aprendendo a construir páginas
+          web. Esta é a <strong>primeira página</strong> que escrevi inteiramente
+          à mão, e ela cresce a cada aula.
+        </p>
+      </section>
+
+      <section id="gostos">
+        <h2>O que eu gosto</h2>
+        <p>Música, séries e jogos.</p>
+
+        <h3>Minhas três séries favoritas, em ordem</h3>
+        <ol>
+          <li>Taxi Driver</li>
+          <li>Hide and Sis</li>
+          <li>Marry My Husband</li>
+        </ol>
+
+        <h3>Instrumentos que eu quero aprender</h3>
+        <ul>
+          <li>Violino</li>
+          <li>Piano</li>
+          <li>Bateria</li>
+        </ul>
+
+        <img src="img/foto.jpg" alt="Foto do campus Newton Paiva" width="400">
+      </section>
+
+      <section id="horarios">
+        <h2>Meus horários</h2>
+
+        <table>
+          <caption>Aulas do semestre 2026/2</caption>
+
+          <thead>
+            <tr>
+              <th scope="col">Dia</th>
+              <th scope="col">Disciplina</th>
+              <th scope="col">Sala</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <th scope="row">Terça</th>
+              <td>Desenvolvimento Web</td>
+              <td>Lab 701</td>
+            </tr>
+            <tr>
+              <th scope="row">Quinta</th>
+              <td>Introdução à Segurança da Informação</td>
+              <td>Sala 609</td>
+            </tr>
+            <tr>
+              <th scope="row">Sexta</th>
+              <td>Banco de Dados</td>
+              <td>Lab 510</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="faculdade">
+        <h2>Onde eu estudo</h2>
+        <p>
+          <a href="https://newtonpaiva.br">Centro Universitário Newton Paiva</a>
+        </p>
+      </section>
+
+      <section id="contato">
+        <h2>Fale comigo</h2>
+
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Seus dados</legend>
+
+            <div>
+              <label for="nome">Nome</label>
+              <input type="text" id="nome" name="nome" required>
+            </div>
+
+            <div>
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+
+            <div>
+              <label for="assunto">Assunto</label>
+              <select id="assunto" name="assunto">
+                <option value="duvida">Uma dúvida</option>
+                <option value="trabalho">Uma proposta de trabalho</option>
+                <option value="outro">Outro</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" name="mensagem" rows="5" cols="40"
+                        maxlength="500" required></textarea>
+
+              <p id="contador" class="contador" aria-live="polite">Até 500 caracteres</p>
+            </div>
+
+            <div>
+              <input type="checkbox" id="copia" name="copia" value="sim">
+              <label for="copia">Quero receber uma cópia desta mensagem</label>
+            </div>
+          </fieldset>
+
+          <div>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+          </div>
+
+          <p id="aviso" class="aviso" aria-live="polite"></p>
+        </form>
+      </section>
+
+    </main>
+
+    <aside>
+      <h2>Links que eu uso</h2>
+      <ul>
+        <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">Referência de HTML (MDN)</a></li>
+        <li><a href="https://validator.w3.org">Validador do W3C</a></li>
+      </ul>
+    </aside>
+
+    <footer>
+      <p>Alessandra Werner &middot; 2026 &middot; ARA0062 &middot; Newton Paiva</p>
+    </footer>
+
+  </body>
+</html>
